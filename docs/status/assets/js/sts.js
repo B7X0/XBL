@@ -11,11 +11,11 @@ fetch('https://api.weao.dev/status')
       if ((item["status"]) === 0) {
         console.log('✅ Updated');
         st.innerHTML = "Working";
-        st.className += 'text-success';
+        st.className = 'text-success';
       } else {
         console.log('⛔️ Patched');
         st.innerHTML = "Patched";
-        st.className += 'text-danger';
+        st.className = 'text-danger';
       }
 });
 
